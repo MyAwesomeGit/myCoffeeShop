@@ -15,6 +15,7 @@
 		C8D4C1C52D3FE78C0026CD83 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C42D3FE78C0026CD83 /* Products.swift */; };
 		C8D4C1C82D3FE8170026CD83 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C72D3FE8170026CD83 /* ProductCard.swift */; };
 		C8D4C1CA2D3FE8910026CD83 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C92D3FE8910026CD83 /* ProductDetail.swift */; };
+		C8D4C1CD2D3FE8F60026CD83 /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1CC2D3FE8F60026CD83 /* ViewStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C8D4C1C42D3FE78C0026CD83 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		C8D4C1C72D3FE8170026CD83 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		C8D4C1C92D3FE8910026CD83 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		C8D4C1CC2D3FE8F60026CD83 /* ViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,6 @@
 				C8D4C1C62D3FE8030026CD83 /* View */,
 				C8D4C1C12D3FE6D20026CD83 /* Model */,
 				C8D4C1B32D3FE5500026CD83 /* myCoffeeShopApp.swift */,
-				C8D4C1B52D3FE5500026CD83 /* ContentView.swift */,
 				C8D4C1B72D3FE5520026CD83 /* Assets.xcassets */,
 				C8D4C1B92D3FE5520026CD83 /* Preview Content */,
 			);
@@ -89,10 +90,20 @@
 		C8D4C1C62D3FE8030026CD83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C8D4C1CB2D3FE8EB0026CD83 /* Tools */,
+				C8D4C1B52D3FE5500026CD83 /* ContentView.swift */,
 				C8D4C1C72D3FE8170026CD83 /* ProductCard.swift */,
 				C8D4C1C92D3FE8910026CD83 /* ProductDetail.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C8D4C1CB2D3FE8EB0026CD83 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C8D4C1CC2D3FE8F60026CD83 /* ViewStyle.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				C8D4C1C52D3FE78C0026CD83 /* Products.swift in Sources */,
 				C8D4C1CA2D3FE8910026CD83 /* ProductDetail.swift in Sources */,
 				C8D4C1B42D3FE5500026CD83 /* myCoffeeShopApp.swift in Sources */,
+				C8D4C1CD2D3FE8F60026CD83 /* ViewStyle.swift in Sources */,
 				C8D4C1C82D3FE8170026CD83 /* ProductCard.swift in Sources */,
 				C8D4C1C32D3FE6E40026CD83 /* Product.swift in Sources */,
 			);
