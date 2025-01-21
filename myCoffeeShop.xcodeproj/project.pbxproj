@@ -11,6 +11,7 @@
 		C8D4C1B62D3FE5500026CD83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1B52D3FE5500026CD83 /* ContentView.swift */; };
 		C8D4C1B82D3FE5520026CD83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D4C1B72D3FE5520026CD83 /* Assets.xcassets */; };
 		C8D4C1BB2D3FE5520026CD83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D4C1BA2D3FE5520026CD83 /* Preview Assets.xcassets */; };
+		C8D4C1C32D3FE6E40026CD83 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C22D3FE6E40026CD83 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C8D4C1B52D3FE5500026CD83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8D4C1B72D3FE5520026CD83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8D4C1BA2D3FE5520026CD83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8D4C1C22D3FE6E40026CD83 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		C8D4C1B22D3FE5500026CD83 /* myCoffeeShop */ = {
 			isa = PBXGroup;
 			children = (
+				C8D4C1C12D3FE6D20026CD83 /* Model */,
 				C8D4C1B32D3FE5500026CD83 /* myCoffeeShopApp.swift */,
 				C8D4C1B52D3FE5500026CD83 /* ContentView.swift */,
 				C8D4C1B72D3FE5520026CD83 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				C8D4C1BA2D3FE5520026CD83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8D4C1C12D3FE6D20026CD83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8D4C1C22D3FE6E40026CD83 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				C8D4C1B62D3FE5500026CD83 /* ContentView.swift in Sources */,
 				C8D4C1B42D3FE5500026CD83 /* myCoffeeShopApp.swift in Sources */,
+				C8D4C1C32D3FE6E40026CD83 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
