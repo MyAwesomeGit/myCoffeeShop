@@ -14,6 +14,7 @@
 		C8D4C1C32D3FE6E40026CD83 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C22D3FE6E40026CD83 /* Product.swift */; };
 		C8D4C1C52D3FE78C0026CD83 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C42D3FE78C0026CD83 /* Products.swift */; };
 		C8D4C1C82D3FE8170026CD83 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C72D3FE8170026CD83 /* ProductCard.swift */; };
+		C8D4C1CA2D3FE8910026CD83 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1C92D3FE8910026CD83 /* ProductDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C8D4C1C22D3FE6E40026CD83 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C8D4C1C42D3FE78C0026CD83 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		C8D4C1C72D3FE8170026CD83 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		C8D4C1C92D3FE8910026CD83 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				C8D4C1C72D3FE8170026CD83 /* ProductCard.swift */,
+				C8D4C1C92D3FE8910026CD83 /* ProductDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				C8D4C1B62D3FE5500026CD83 /* ContentView.swift in Sources */,
 				C8D4C1C52D3FE78C0026CD83 /* Products.swift in Sources */,
+				C8D4C1CA2D3FE8910026CD83 /* ProductDetail.swift in Sources */,
 				C8D4C1B42D3FE5500026CD83 /* myCoffeeShopApp.swift in Sources */,
 				C8D4C1C82D3FE8170026CD83 /* ProductCard.swift in Sources */,
 				C8D4C1C32D3FE6E40026CD83 /* Product.swift in Sources */,
