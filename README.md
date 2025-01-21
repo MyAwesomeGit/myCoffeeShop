@@ -1,2 +1,0 @@
-# myCoffeeShop
-SwiftUI app
