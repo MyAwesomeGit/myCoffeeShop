@@ -1,12 +1,15 @@
 import SwiftUI
 
-
 struct ContentView: View {
+    @StateObject var cart = CartManager()
     @State private var selectedProduct: Product?
     @State private var viewStyle: ViewStyle = .list
+    @State private var showCartView = false
+    
+    @State var testInt: Int = 0
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 0) {
                 switch viewStyle {
                 case .list:
@@ -37,23 +40,34 @@ struct ContentView: View {
                             }
                         }
                     }
+                    
                 }
             }
+            .navigationDestination(for: Product.self) { product in
+                ProductDetail(product: product)
+                
+            }
+            .navigationDestination(isPresented: $showCartView, destination: {CartView(cart: cart)})
             .navigationTitle("My Coffee Shop")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         self.viewStyle = self.viewStyle == .list ? .grid : .list
                     }) {
-                        Text(self.viewStyle == .list ? "Grid" : "List")
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
+                        HStack {
+                            Image(systemName: self.viewStyle == .list ? "rectangle.grid.2x2" : "list.bullet")
+                                .foregroundColor(.white)
+                            Spacer()
+                            ShowCartViewButton(showCartView: $showCartView)
+                        }
+                        .padding()
+                        .background(Color(mainBackgroundColor))
+                        .cornerRadius(90)
                     }
                 }
             }
         }
+        .environmentObject(cart)
     }
 }
 
