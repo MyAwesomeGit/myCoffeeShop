@@ -4,32 +4,34 @@ struct ProductCard: View {
     let card: Product
     
     var body: some View {
-        HStack {
-            if let imageResource = card.image {
-                Image(imageResource)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
-            } else {
-                Image(systemName: card.name.lowercased())
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
-            }
+        ZStack {
+            Color(mainBackgroundColor)
+                                .edgesIgnoringSafeArea(.all)
+            HStack {
+                if let imageResource = card.image {
+                    Image(imageResource)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50, height: 50)
+                } else {
+                    Image(systemName: card.name.lowercased())
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50, height: 50)
+                }
+                VStack(alignment: .leading) {
+                    Text(card.name)
+                        .font(.headline)
+                        .foregroundColor(mainFontColor)
+                    
+                    Text("\(formatPrice(price: card.price)) ₽")
+                        .foregroundColor(.green)
+                }
+                Spacer()
+            }.cornerRadius(90)
+            .padding()
             
-            VStack(alignment: .leading) {
-                Text(card.name)
-                    .font(.headline)
-                
-                Text("$\(card.price)") //TODO: Add the price formatter
-                    .foregroundColor(.green)
-            }
-            
-            Spacer()
         }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(10)
     }
 }
 
@@ -37,8 +39,8 @@ struct ProductCard: View {
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
         let product = Product(
-            name: "Example Product",
-            price: 123.45,
+            name: "Espresso",
+            price: 123.50,
             description: "This is an example product.",
             image: ImageResource(name: "espresso", bundle: .main)
         )
@@ -46,4 +48,3 @@ struct ProductCard_Previews: PreviewProvider {
         return ProductCard(card: product)
     }
 }
-
