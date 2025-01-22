@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Product: Identifiable {
+struct Product: Identifiable, Hashable {
     let id = UUID()
     let name: String
     let price: Double
@@ -14,4 +14,3 @@ struct Product: Identifiable {
         self.image = image
     }
 }
-
