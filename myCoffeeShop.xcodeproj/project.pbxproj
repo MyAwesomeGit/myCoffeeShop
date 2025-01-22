@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8C823262D413CEE00C4A3B4 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C823252D413CEE00C4A3B4 /* CartManager.swift */; };
 		C8D4C1B42D3FE5500026CD83 /* myCoffeeShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1B32D3FE5500026CD83 /* myCoffeeShopApp.swift */; };
 		C8D4C1B62D3FE5500026CD83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4C1B52D3FE5500026CD83 /* ContentView.swift */; };
 		C8D4C1B82D3FE5520026CD83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D4C1B72D3FE5520026CD83 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8C823252D413CEE00C4A3B4 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		C8D4C1B02D3FE5500026CD83 /* myCoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D4C1B32D3FE5500026CD83 /* myCoffeeShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCoffeeShopApp.swift; sourceTree = "<group>"; };
 		C8D4C1B52D3FE5500026CD83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				C8D4C1C22D3FE6E40026CD83 /* Product.swift */,
 				C8D4C1C42D3FE78C0026CD83 /* Products.swift */,
+				C8C823252D413CEE00C4A3B4 /* CartManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8D4C1B62D3FE5500026CD83 /* ContentView.swift in Sources */,
+				C8C823262D413CEE00C4A3B4 /* CartManager.swift in Sources */,
 				C8D4C1C52D3FE78C0026CD83 /* Products.swift in Sources */,
 				C8D4C1CA2D3FE8910026CD83 /* ProductDetail.swift in Sources */,
 				C8D4C1B42D3FE5500026CD83 /* myCoffeeShopApp.swift in Sources */,
